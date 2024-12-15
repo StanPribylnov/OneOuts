@@ -1,0 +1,153 @@
+{
+  "menu": [
+    {
+      "name": "Discover TMC",
+      "sub-menu": [
+        {
+          "name": "Internet",
+          "link": "/category/internet",
+          "description": "Unravelling the world at the intersection of technology, companies and human need",
+          "type": "internal",
+          "access": "public"
+        },
+        {
+          "name": "Business",
+          "link": "/category/business",
+          "description": "Timely stories on some of the biggest and most important Indian corporations",
+          "type": "internal",
+          "access": "public"
+        },
+        {
+          "name": "Chaos",
+          "link": "/category/chaos",
+          "description": "Deep dives into the heart of the chaos—from jobs to the environment—that define our reality",
+          "type": "internal",
+          "access": "public"
+        },
+        {
+          "name": "Opinion",
+          "link": "/newsletters",
+          "description": "Learn more about our newsletters",
+          "type": "internal",
+          "access": "public"
+        },
+        {
+          "name": "News Explainer",
+          "link": "/yesterday",
+          "description": "Everything that’s happened around the world in the news. Clutter-free with a quick, to-the-point perspective",
+          "type": "",
+          "access": "public"
+        },
+        {
+          "name": "Companies",
+          "link": "/company",
+          "description": "Check out our stories across various companies",
+          "type": "internal",
+          "access": "public"
+        },
+        {
+          "name": "Free Reads",
+          "link": "/free-reads",
+          "description": "Read these stories for free. No subscription required. Unlock with the free starter credits in your account.",
+          "type": "internal",
+          "access": "public"
+        },
+        {
+          "name": "All Stories",
+          "link": "/all-stories",
+          "description": "View all our stories and newsletters",
+          "type": "internal",
+          "access": "public"
+        },
+        {
+          "name": "Bookmarks",
+          "link": "/bookmarks",
+          "description": "View all the stories or newsletters you have bookmarked to be read for later",
+          "type": "internal",
+          "access": "private"
+        },
+        {
+          "name": "Unlocked stories",
+          "link": "/unlocked-stories",
+          "description": "View all stories that you have unlocked using Privilege or Starter credits",
+          "type": "internal",
+          "access": "private"
+        }
+      ]
+    },
+    {
+      "name": "More about TMC",
+      "sub-menu": [
+        {
+          "name": "About Us",
+          "link": "/about-us",
+          "description": "",
+          "type": "internal",
+          "access": "public"
+        },
+        {
+          "name": "Writers",
+          "link": "/writers",
+          "description": "",
+          "type": "internal",
+          "access": "public"
+        },
+        {
+          "name": "Team",
+          "link": "/team",
+          "description": "",
+          "type": "internal",
+          "access": "public"
+        },
+        {
+          "name": "Leadership",
+          "link": "/leadership",
+          "description": "",
+          "type": "internal",
+          "access": "public"
+        }
+      ]
+    },
+    {
+      "name": "Other useful sections",
+      "sub-menu": [
+        {
+          "name": "Subscriptions",
+          "link": "/pricing",
+          "description": "",
+          "type": "",
+          "access": "public"
+        },
+        {
+          "name": "Gifting",
+          "link": "/gifting",
+          "description": "",
+          "type": "internal",
+          "access": "public"
+        },
+        {
+          "name": "FAQ",
+          "link": "/faq",
+          "description": "",
+          "type": "internal",
+          "access": "public"
+        },
+        {
+          "name": "Privacy Policy",
+          "link": "/privacy-policy",
+          "description": "",
+          "type": "internal",
+          "access": "public"
+        },
+        {
+          "name": "Terms and Conditions",
+          "link": "/terms-and-conditions",
+          "description": "",
+          "type": "internal",
+          "access": "public"
+        }
+      ]
+    }
+  ],
+  "copyright": "2024"
+}

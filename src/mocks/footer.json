@@ -1,0 +1,130 @@
+{
+  "menu": [
+    {
+      "name": "Categories",
+    },
+    {
+      "name": "Subscription Plans",
+      "sub-menu": [
+        {
+          "name": "Individual",
+          "link": "/pricing/individual",
+          "type": "internal",
+          "access": "public"
+        },
+        {
+          "name": "Corporate",
+          "link": "/pricing/corporate",
+          "type": "internal",
+          "access": "public"
+        },
+        {
+          "name": "Student",
+          "link": "/pricing/student",
+          "type": "internal",
+          "access": "public"
+        },
+        {
+          "name": "Teacher/University",
+          "link": "/pricing/university",
+          "type": "internal",
+          "access": "public"
+        },
+        {
+          "name": "Friends of TMC",
+          "link": "/pricing/friends-of-tmc",
+          "type": "internal",
+          "access": "public"
+        },
+        {
+          "name": "Gifting",
+          "link": "/gifting",
+          "type": "internal",
+          "access": "public"
+        }
+      ]
+    },
+    {
+      "name": "Company",
+      "sub-menu": [
+        {
+          "name": "About Us",
+          "link": "/about-us",
+          "type": "internal",
+          "access": "public"
+        },
+        {
+          "name": "Leadership",
+          "link": "/leadership",
+          "type": "internal",
+          "access": "public"
+        },
+        {
+          "name": "Team",
+          "link": "/team",
+          "type": "internal",
+          "access": "public"
+        },
+        {
+          "name": "Writers",
+          "link": "/writers",
+          "type": "internal",
+          "access": "public"
+        },
+        {
+          "name": "Editorial code",
+          "link": "/editorial-code-of-conduct",
+          "type": "internal",
+          "access": "public"
+        }
+      ]
+    },
+    {
+      "name": "More",
+      "sub-menu": [
+        {
+          "name": "Contact us",
+          "link": "https://support@themorningcontext.com",
+          "type": "email",
+          "access": "public"
+        },
+        {
+          "name": "FAQ's",
+          "link": "/faq",
+          "type": "internal",
+          "access": "public"
+        },
+        {
+          "name": "Privacy Policy",
+          "link": "/privacy-policy",
+          "type": "internal",
+          "access": "public"
+        },
+        {
+          "name": "Terms and Conditions",
+          "link": "/terms-and-conditions",
+          "type": "internal",
+          "access": "public"
+        },
+        {
+          "name": "Grievance Redressal",
+          "link": "/grievance-redressal",
+          "type": "internal",
+          "access": "public"
+        }
+      ]
+    },
+    {
+      "name": "TMC Blog",
+      "sub-menu": [
+        {
+          "name": "On the record",
+          "link": "/blog",
+          "type": "internal",
+          "access": "public"
+        }
+      ]
+    }
+  ],
+  "copyright": "2024"
+}
