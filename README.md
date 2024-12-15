@@ -1,130 +1,61 @@
-Project Description
+# Project description.
 
-This project is a comprehensive web application designed to provide an engaging user experience for games, stores, and leaderboards. The application includes features like fetching and displaying detailed game and store information, handling user authentication, and simulating premium currency purchase flows (e.g., buying diamonds).
+OneOuts it's my Assignment for the Frontend Developer position.
+I did additional flow like:
+- Published project on Vercel: https://one-outs-stanpribylnovs-projects.vercel.app/
+- Customized and set up the auth0 flow for real domain
+- Integrated with RAWG API
+- Game Details page( + request to get real data)
+- Store Details page( + request to get real data)
+- Creator/Leaderbord Details page( + request to get real data)
 
-Key solutions implemented in the project:
+## Getting Started(local server)
+The project setup is simple to use, but project contains senstive data like my RAWG API key(i will not share it with u) and
+Auth0 client id and secret, so you need to create your own Auth0 account and get your own client id and secret.
 
-Dynamic Routing: Pages dynamically fetch data based on route parameters, such as game or store IDs.
+### Few steps to run locally.
+**1. Met .env.local structure**
 
-State Management: Utilized Redux Toolkit with React Query for efficient state and data fetching.
+**2. Get your own Rawg API key**
 
-Authentication: Integrated Auth0 for seamless user authentication and session handling.
+**3. Setup your own Auth0 account and get your own client id and secret.**
 
-Persistence: Used localStorage to persist user data (e.g., diamond balance) across sessions.
+If my production link is not enought for you https://one-outs-stanpribylnovs-projects.vercel.app/
+**i will help you to set up your own Auth0 account and get your own client id and secret + rawg api key.**
 
-Responsive Design: Ensured the UI is mobile-friendly and visually appealing across all devices.
+## 1 Met .env.local structure
+Example of .env file:
+```bash
+AUTH0_SECRET=replace-with-your-own-secret-generated-with-openssl
+AUTH0_BASE_URL=http://localhost:3000
+AUTH0_ISSUER_BASE_URL=
+AUTH0_CLIENT_ID=
+AUTH0_CLIENT_SECRET=
+AUTH0_AUDIENCE=
+AUTH0_SCOPE=
+NEXT_PUBLIC_RAWG_API_KEY=
+```
+All lines is about auth0 integration, and last line is about rawg api key.
 
-Modular Codebase: Organized code into reusable components for easy scalability and maintenance.
+## 2. Get your own Rawg API key ##
+So let's get your own rawg api key and auth0 client id and secret.
+Rawg: https://rawg.io/apidocs - just sign in and get your key for NEXT_PUBLIC_RAWG_API_KEY.
 
-How to Run
+## 3. Setup your own Auth0 account and get your own client id and secret.
+Last, but not least, you need to create your own Auth0 account and get your own client id and secret.
+https://auth0.com/docs/quickstart/webapp/nextjs - pls follow this instruction to get your own client id and secret and setup your own auth.
 
-Prerequisites
 
-Make sure you have the following installed on your system:
+# We are ready to run! Appreciate your time and attention.
 
-Node.js (v16 or higher)
-
-npm (Node Package Manager) or yarn
-
-Installation
-
-Clone the repository:
-
-git clone <repository-url>
-cd <project-directory>
-
-Install dependencies:
-
+Install dependencies
+```bash
 npm install
-# or
-yarn install
+```
+Run llocal server
 
-Create a .env.local file in the root directory and add the required environment variables:
-
-NEXT_PUBLIC_RAWG_API_KEY=<Your RAWG API Key>
-AUTH0_DOMAIN=<Your Auth0 Domain>
-AUTH0_CLIENT_ID=<Your Auth0 Client ID>
-
-Running the Application
-
-Start the development server:
-
+```bash
 npm run dev
-# or
-yarn dev
+```
 
-The application will be available at http://localhost:3000.
-
-To build for production:
-
-npm run build
-npm start
-
-Testing
-
-Run tests (if applicable):
-
-npm test
-# or
-yarn test
-
-Features and Solutions
-
-1. Dynamic Routing for Pages
-
-The application uses Next.js's App Router to dynamically render pages based on route parameters.
-
-Examples:
-
-/games/[id]: Fetches and displays details for a specific game.
-
-/stores/[id]: Displays store-specific information.
-
-2. State Management with Redux Toolkit
-
-Centralized state management ensures consistent data across the application.
-
-Integrated React Query to fetch, cache, and synchronize data from APIs.
-
-3. User Authentication
-
-Auth0 integration allows users to log in and access personalized features.
-
-User details, like nickname and given_name, are displayed in the header after login.
-
-4. Persistent Diamond Purchase Flow
-
-Simulated diamond purchases update the user's balance dynamically.
-
-Diamond balance persists across sessions using localStorage.
-
-5. Responsive UI Design
-
-Utilized Tailwind CSS for responsive layouts and clean styling.
-
-Ensured all components (e.g., cards, headers, buttons) adapt gracefully to various screen sizes.
-
-6. Modular and Reusable Code
-
-Created reusable UI components, such as Header, Button, and Card, to ensure consistent design and simplify development.
-
-7. API Integration
-
-Connected to the RAWG API to fetch data for games, stores, and creators.
-
-Handled pagination, dynamic queries, and error states effectively.
-
-Future Enhancements
-
-Search and Filter Functionality: Add search and filter options for games and stores.
-
-Admin Dashboard: Create an admin panel for managing content dynamically.
-
-Enhanced UX: Implement animations and interactive features for a more engaging experience.
-
-API Rate Limit Handling: Introduce caching strategies to reduce redundant API calls.
-
-Conclusion
-
-This project demonstrates a scalable and feature-rich web application leveraging modern development practices with Next.js, Redux Toolkit, and Tailwind CSS. It provides a robust foundation for building advanced, user-centric platforms.
-
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
