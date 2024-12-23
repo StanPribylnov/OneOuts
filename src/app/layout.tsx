@@ -6,8 +6,9 @@ import { Playfair_Display } from 'next/font/google';
 import Footer from '@/components/Footer/Footer';
 import Header from '@/components/Header/Header';
 import { StoreProvider } from '@/app/StoreProvider';
-import { UserProvider } from '@auth0/nextjs-auth0/client';
 import { DiamondProvider } from "@/context/diamonds";
+import { getServerSession } from 'next-auth';
+import SessionProvider from '@/components/SessionProvider';
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -46,26 +47,28 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: ReactNode;
 }>) {
+  const session = await getServerSession();
+
   return (
     <html lang="en">
-    <UserProvider>
+    <SessionProvider session={session}>
       <body className={`${playfair.variable} flex flex-col min-h-screen `}>
         <StoreProvider>
           <DiamondProvider>
             <Header />
-            <main className="mx-auto max-w-[1440px] flex-grow p-4">
+            <main className="mx-auto flex-grow p-4">
               {children}
             </main>
             <Footer />
           </DiamondProvider>
         </StoreProvider>
       </body>
-    </UserProvider>
+    </SessionProvider>
     </html>
   );
 }

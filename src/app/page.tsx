@@ -1,9 +1,7 @@
-import { getSession } from '@auth0/nextjs-auth0';
+import { getServerSession } from 'next-auth';
 
 const HomePage = async () => {
-  const session = await getSession();
-  const { user } = session || {};
-  const { given_name, nickname } = user || {};
+  const session = await getServerSession();
 
   return (
     <div className="pt-20">
@@ -13,11 +11,7 @@ const HomePage = async () => {
         <div className="text-left space-y-4">
           <div className="flex items-center">
             <span className="font-semibold text-gray-800 w-32">User:</span>
-            <span className="text-gray-600">{given_name || 'N/A'}</span>
-          </div>
-          <div className="flex items-center">
-            <span className="font-semibold text-gray-800 w-32">Nickname:</span>
-            <span className="text-gray-600">{nickname || 'N/A'}</span>
+            <span className="text-gray-600">{session?.user?.name || 'N/A'}</span>
           </div>
         </div>
       </div>
