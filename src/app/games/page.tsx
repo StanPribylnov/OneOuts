@@ -48,7 +48,7 @@ const GamesPage = () => {
             <img
               src={game.background_image}
               alt={game.name}
-              className="w-full h-40 object-cover rounded mb-4"
+              className="w-full h-80 object-cover rounded mb-4"
             />
             <h2 className="text-lg font-semibold">{game.name}</h2>
             <p className="text-sm text-gray-600">Released: {game.released}</p>

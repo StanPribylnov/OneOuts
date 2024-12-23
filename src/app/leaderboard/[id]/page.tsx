@@ -3,7 +3,6 @@ import React from 'react';
 import { useFetchCreatorDetailsQuery } from '@/store/leaderboard/apiSlice';
 import { useParams } from 'next/navigation';
 
-// Type for Creator details
 interface CreatorDetails {
   id: number;
   name: string;

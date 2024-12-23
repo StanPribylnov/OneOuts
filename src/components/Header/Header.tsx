@@ -17,7 +17,6 @@ const Header =  () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { data: session } = useSession();
 
-
   return (
     <header className="bg-[#8D3535] border-b border-[#adadad]">
       <div className="container flex ustify-between px-5 py-3">
@@ -73,9 +72,10 @@ const Header =  () => {
       </div>
 
       {/* Mobile Menu */}
+      {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="lg:hidden bg-[#8D3535] px-5 py-3 text-white space-y-4">
-          <nav className="flex flex-col items-start space-y-2">
+        <div className="lg:hidden bg-[#8D3535] px-5 py-3 text-white">
+          <nav className="flex flex-col items-center space-y-4"> {/* Center menu items */}
             <Link href="/games" className="font-matteo font-normal">
               Games
             </Link>
@@ -86,7 +86,7 @@ const Header =  () => {
               Leaderboard
             </Link>
           </nav>
-          <div className="flex flex-col space-y-2">
+          <div className="flex flex-col items-center space-y-4 mt-4">
             {session?.user?.name ? (
               <>
                 <span>Hi, {session?.user?.name}</span>

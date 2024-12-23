@@ -4,7 +4,6 @@ import React from 'react';
 import { useFetchStoreDetailsQuery } from '@/store/stores/apiSlice';
 import { useParams } from "next/navigation";
 
-// Define types for store details
 interface StoreDetails {
   id: number;
   name: string;

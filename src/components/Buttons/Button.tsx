@@ -2,11 +2,11 @@ import React from 'react';
 import Link from 'next/link';
 
 interface ButtonProps {
-  text: string; // Button text
-  href?: string; // Optional link for rendering as an <a> tag
-  onClick?: () => void; // Optional onClick handler
-  icon?: React.ReactNode; // Icon as a React component
-  className?: string; // Custom styles for the button
+  text: string;
+  href?: string;
+  onClick?: () => void;
+  icon?: React.ReactNode;
+  className?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -16,11 +16,9 @@ const Button: React.FC<ButtonProps> = ({
   icon,
   className,
 }) => {
-  // Default styles for the button
   const defaultStyles =
     'inline-flex items-center self-start justify-center px-4 py-2';
 
-  // Combine default styles with any custom styles provided via props
   const combinedStyles = `${defaultStyles} ${className || ''}`;
 
   const content = (

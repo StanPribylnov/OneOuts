@@ -1,12 +1,4 @@
 import React from 'react';
-import Button from '@/components/Buttons/Button';
-
-import FacebookIcon from '@/assets/icons/facebook-2.svg';
-import TwitterIcon from '@/assets/icons/twitter.svg';
-import LinkedinIcon from '@/assets/icons/linkedin.svg';
-import InstagramIcon from '@/assets/icons/instagram.svg';
-import YoutubeIcon from '@/assets/icons/youtube.svg';
-import Link from 'next/link';
 import Logo from "@/components/Header/Logo/Logo";
 
 const Footer = () => {
@@ -16,7 +8,6 @@ const Footer = () => {
         className="container mx-auto px-4 flex flex-col items-center justify-between space-y-4 xs:px-6 md:flex-row md:space-y-0">
         <div className="flex items-center">
           <Logo />
-          {/*<img src="/path-to-your-logo.png" alt="Logo" className="h-10 w-10 xs:h-12 xs:w-12 xl:h-14 xl:w-14" />*/}
         </div>
 
         <div className="text-center text-sm xs:text-base xl:text-lg">

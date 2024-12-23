@@ -10,7 +10,7 @@ const LoginButton = () => {
   return (
     <Button
       text={session?.user?.name ? 'Logout' : 'Login'}
-      className="max-h-[36px] px-5 py-2 bg-white text-indigo-950 text-sm font-matteo font-bold tracking-wider border border-[#6C7AF6] uppercase"
+      className="max-h-[36px] w-full px-5 py-2 bg-white text-indigo-950 text-sm font-matteo font-bold tracking-wider border border-[#6C7AF6] uppercase"
       onClick={() => {
         session?.user?.name ? signOut() : signIn();
       }}

@@ -3,7 +3,6 @@ import React from 'react';
 import { useFetchGameDetailsQuery } from '@/store/games/apiSlice';
 import { useParams } from "next/navigation";
 
-// Define the type for game details
 interface GameDetails {
   id: number;
   name: string;
@@ -17,7 +16,6 @@ const GameDetailsPage: React.FC = () => {
   const params = useParams();
   const { id } = params;
 
-  // Use the GameDetails type for the data returned by the query
   const { data, error, isLoading } = useFetchGameDetailsQuery(id) as {
     data: GameDetails;
     error: unknown;

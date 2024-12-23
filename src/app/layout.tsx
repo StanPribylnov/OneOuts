@@ -61,7 +61,7 @@ export default async function RootLayout({
         <StoreProvider>
           <DiamondProvider>
             <Header />
-            <main className="mx-auto flex-grow p-4">
+            <main className="flex-grow p-4">
               {children}
             </main>
             <Footer />

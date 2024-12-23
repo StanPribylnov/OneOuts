@@ -1,10 +1,8 @@
-// LeaderBoardPage.tsx
 'use client';
 import React, { useState } from "react";
 import { useFetchLeaderboardQuery } from "@/store/leaderboard/apiSlice";
 import Link from "next/link";
 
-// Type for each creator in the leaderboard
 interface Creator {
   id: number;
   name: string;
@@ -46,7 +44,7 @@ const LeaderBoardPage: React.FC = () => {
             <img
               src={creator.image || creator.image_background}
               alt={creator.name}
-              className="w-full h-40 object-cover rounded mb-4"
+              className="w-full h-80 object-cover rounded mb-4"
             />
             <h2 className="text-lg font-semibold">{creator.name}</h2>
             <p className="text-sm text-gray-600">Games Count: {creator.games_count}</p>

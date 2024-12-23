@@ -44,7 +44,7 @@ const StoresPage: React.FC = () => {
             <img
               src={store.image_background}
               alt={store.name}
-              className="w-full h-40 object-cover rounded mb-4"
+              className="w-full h-80 object-cover rounded mb-4"
             />
             <h2 className="text-lg font-semibold">{store.name}</h2>
             <p className="text-sm text-gray-600">Domain: {store.domain}</p>
