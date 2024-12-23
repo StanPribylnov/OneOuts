@@ -95,7 +95,7 @@ const Header =  () => {
                   <span>Diamonds: {diamondBalance}</span>
                 </div>
                 <Button
-                  text="BUY DIAMONDS"
+                  text="BUY"
                   className="w-full px-5 py-2 bg-gradient-to-r from-[#43CEBD] to-[#6FB5E9] text-white text-sm font-matteo font-bold tracking-wider"
                   href="/diamonds"
                 />
