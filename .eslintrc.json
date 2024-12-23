@@ -1,3 +1,8 @@
 {
-  "extends": ["next", "prettier", "next/core-web-vitals", "next/typescript"]
+  "extends": ["next", "next/core-web-vitals", "prettier"],
+  "rules": {
+    "react/no-unescaped-entities": "off",
+    "react/react-in-jsx-scope": "off",
+    "prettier/prettier": ["error", { "endOfLine": "auto" }]
+  }
 }

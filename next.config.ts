@@ -44,7 +44,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'media2.themorningcontext.com',
+        hostname: '',
         port: '',
         pathname: '/**',
       },

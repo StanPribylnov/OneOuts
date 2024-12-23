@@ -25,7 +25,7 @@ const Footer = () => {
 
         <div>
           <a
-            href="https://github.com/your-repo-link"
+            href="https://github.com/StanPribylnov/OneOuts/tree/main"
             target="_blank"
             className="text-blue-400 hover:text-blue-600 transition duration-300 text-sm xs:text-base xl:text-lg"
             rel="noopener noreferrer"
