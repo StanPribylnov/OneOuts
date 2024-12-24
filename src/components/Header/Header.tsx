@@ -59,7 +59,7 @@ const Header =  () => {
               <Image src={DiamondIcon} alt="Diamond" height={20} width={20} />
               <div className="text-white">Diamonds: {diamondBalance}</div>
               <Button
-                text="BUY DIAMONDS"
+                text="BUY"
                 className="max-h-[36px] px-5 py-2 bg-gradient-to-r from-[#43CEBD] to-[#6FB5E9] text-white text-sm font-matteo font-bold tracking-wider"
                 href="/diamonds"
               />

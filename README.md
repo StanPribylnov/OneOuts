@@ -32,10 +32,9 @@ GOOGLE_CLIENT_ID=
 GOOGLE_CLIENT_SECRET=
 NEXT_PUBLIC_RAWG_API_KEY=
 ```
-All lines is about auth0 integration, and last line is about rawg api key.
 
 ## 2. Get your own Rawg API key ##
-So let's get your own rawg api key and auth0 client id and secret.
+So let's get your own rawg api key and google provider client id and secret.
 Rawg: https://rawg.io/apidocs - just sign in and get your key for NEXT_PUBLIC_RAWG_API_KEY.
 
 ## 3. Setup your own google account and get your own client id and secret.
